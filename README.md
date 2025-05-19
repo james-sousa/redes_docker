@@ -13,7 +13,7 @@ Este projeto tem como objetivo simular uma rede de computadores utilizando Docke
 
 ## Topologias Implementadas
 
-O sistema permite duas topologias de interconexão entre os roteadores:
+O sistema permite três topologias de interconexão entre os roteadores:
 
 * **Topologia Linear:** Cada roteador conecta-se ao próximo em uma cadeia (ex: R1-R2-R3...)
 * **Topologia em Anel:** Cada roteador conecta-se ao seguinte e o último conecta-se ao primeiro, formando um ciclo
