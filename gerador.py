@@ -7,21 +7,19 @@ def gerar_docker_compose_custom(links_roteadores):
 
     roteadores_ordenados = sorted(links_roteadores.keys())
 
-    ip_contadores = {}  # Próximo IP disponível por sub-rede
+    ip_contadores = {}
     router_ips = {}
     router_net_ips = {}
 
-    # IP principal para cada roteador (usado para identificação)
     for i, router in enumerate(roteadores_ordenados, 1):
         subnet = f"subnet_{i}"
         base_ip = f"{base_subnet}.{i}"
-        ip_contadores[subnet] = 2  # começa do .2
+        ip_contadores[subnet] = 2
         ip = f"{base_ip}.{ip_contadores[subnet]}"
         ip_contadores[subnet] += 1
         router_ips[router] = ip
         router_net_ips[router] = {subnet: ip}
 
-    # Adiciona IPs nas subnets dos vizinhos, evitando conflitos
     for router in roteadores_ordenados:
         for vizinho in links_roteadores[router]:
             if vizinho not in roteadores_ordenados:
@@ -36,7 +34,6 @@ def gerar_docker_compose_custom(links_roteadores):
                 ip_contadores[subnet] += 1
                 router_net_ips[router][subnet] = ip
 
-    # Variáveis de ambiente
     router_env_vars = {}
     for router in roteadores_ordenados:
         env = [f"my_name={router}", f"my_ip={router_ips[router]}", f"router_links={','.join(links_roteadores[router])}"]
@@ -45,7 +42,6 @@ def gerar_docker_compose_custom(links_roteadores):
                 env.append(f"{viz}_ip={router_ips[viz]}")
         router_env_vars[router] = env
 
-    # IPs dos hosts
     host_ips = []
     for i in range(1, len(roteadores_ordenados) + 1):
         host_ips.append(f"{base_subnet}.{i}.10")
@@ -56,10 +52,8 @@ def gerar_docker_compose_custom(links_roteadores):
         targets = [ip for ip in host_ips + router_ips_list if ip != meu_ip]
         return ' '.join([f"'ping {ip}'" for ip in targets])
 
-    # Geração do docker-compose
     content = f"version: '{version}'\n\nservices:\n"
 
-    # Routers
     for router in roteadores_ordenados:
         content += f"  {router}:\n"
         content += "    build:\n"
@@ -78,8 +72,10 @@ def gerar_docker_compose_custom(links_roteadores):
         content += "      - ./logs:/app/logs\n"
         content += "\n"
 
-    # Hosts
     for i in range(1, len(roteadores_ordenados) + 1):
+        router_name = roteadores_ordenados[i - 1]
+        gateway_ip = router_ips[router_name]
+
         for suffix in ['a', 'b']:
             host_name = f"host{i}{suffix}"
             host_ip = f"{base_subnet}.{i}.1{0 + (ord(suffix) - ord('a'))}"
@@ -90,11 +86,12 @@ def gerar_docker_compose_custom(links_roteadores):
             content += "    environment:\n"
             content += f"      - my_name={host_name}\n"
             content += f"      - my_ip={host_ip}\n"
+            content += f"      - gateway_ip={gateway_ip}\n"
             content += "    networks:\n"
             content += f"      subnet_{i}:\n"
             content += f"        ipv4_address: {host_ip}\n"
             content += "    depends_on:\n"
-            content += f"      - {roteadores_ordenados[i - 1]}\n"
+            content += f"      - {router_name}\n"
             content += "    command: [\"sh\", \"-c\", \"sleep 10 && python host.py --test " + comando_ping(host_ip) + "\"]\n"
             content += "    volumes:\n"
             content += "      - ./logs:/app/logs\n"
@@ -102,7 +99,6 @@ def gerar_docker_compose_custom(links_roteadores):
             content += "      - NET_ADMIN\n"
             content += "\n"
 
-    # Networks
     content += "networks:\n"
     for i in range(1, len(roteadores_ordenados) + 1):
         content += f"  subnet_{i}:\n"
@@ -112,7 +108,6 @@ def gerar_docker_compose_custom(links_roteadores):
         content += f"      - subnet: {base_subnet}.{i}.0/24\n"
 
     return content
-
 
 def criar_topologia():
     while True:

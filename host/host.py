@@ -3,8 +3,6 @@ import sys
 import time
 import subprocess
 
-
-
 class RegistroLog:
     def __init__(self, nome_host):
         self.nome_host = nome_host
@@ -21,34 +19,14 @@ class RegistroLog:
             print(f"[ERRO] Falha ao gravar log: {e}", flush=True)
 
 class HostRede:
-    def __init__(self, meu_ip, logger):
+    def __init__(self, meu_ip, gateway_ip, logger):
         self.meu_ip = meu_ip
+        self.router_ip = gateway_ip
         self.logger = logger
-        self.router_ip = self.gateway_padrao()
-    
-    def gateway_padrao(self):
-        if self.meu_ip.startswith("172.18.1."):
-            return "172.18.1.3"
-        elif self.meu_ip.startswith("172.18.2."):
-            return "172.18.2.3"
-        elif self.meu_ip.startswith("172.18.3."):
-            return "172.18.3.3"
-        elif self.meu_ip.startswith("172.18.4."):
-            return "172.18.4.3"
-        elif self.meu_ip.startswith("172.18.5."):
-            return "172.18.5.3"
-        elif self.meu_ip.startswith("172.18.6."):
-            return "172.18.6.3"
-        elif self.meu_ip.startswith("172.18.7."):
-            return "172.18.7.3"
-        elif self.meu_ip.startswith("172.18.8."):
-            return "172.18.8.3"
-        else:
-            self.logger.registrar(f"[AVISO] IP {self.meu_ip} não pertence a nenhuma sub-rede reconhecida.")
-            return None
 
     def configurar_gateway(self):
         if not self.router_ip:
+            self.logger.registrar("[ERRO] gateway_ip não definido.")
             return
         self.logger.registrar(f"Definindo rota padrão via {self.router_ip}...")
         try:
@@ -83,18 +61,16 @@ class HostRede:
             self.logger.registrar(f"Timeout durante ping para {destino}.")
         except Exception as e:
             self.logger.registrar(f"[ERRO] Durante ping para {destino}: {e}")
-    
-    
+
 def main():
     nome_host = os.environ.get("my_name", "host_generico")
     meu_ip = os.environ.get("my_ip", "")
+    gateway_ip = os.environ.get("gateway_ip", "")
     logger = RegistroLog(nome_host)
-    testador = HostRede(meu_ip, logger)
 
     logger.registrar("Inicializando host...")
+    testador = HostRede(meu_ip, gateway_ip, logger)
     testador.configurar_gateway()
-
-    
 
     if len(sys.argv) > 1 and sys.argv[1] == "--test":
         destinos = sys.argv[2:]
@@ -103,7 +79,6 @@ def main():
             for destino in destinos:
                 ip_destino = destino.split()[-1]
                 testador.executa_ping(ip_destino)
-                
             logger.registrar("Testes finalizados.")
         else:
             logger.registrar("Nenhum destino fornecido para teste.")
