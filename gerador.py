@@ -3,7 +3,7 @@ import random
 
 def gerar_docker_compose_custom(links_roteadores):
     version = "3.8"
-    base_subnet = "172.19"
+    base_subnet = "172.18"
 
     roteadores_ordenados = sorted(links_roteadores.keys())
 
