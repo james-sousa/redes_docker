@@ -81,8 +81,8 @@ Cada roteador:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seuusuario/nome-do-projeto.git
-cd nome-do-projeto
+git clone https://github.com/james-sousa/redes_docker.git
+cd redes_docker
 ```
 
 2. Construa os containers:
@@ -106,9 +106,10 @@ sudo docker-compose down --volumes --remove-orphans
 5. Teste conectividade:
 
 ```bash
-sudo docker exec -it host1a 
+sudo docker exec -it redes_docker_host1a_1
 ping 172.18.X.Y
 ```
+Veja o arquivo lista_ip_hosts - Ips dos hosts utilizados no projeto
 
 ## Arquivos do Projeto
 
@@ -118,11 +119,13 @@ ping 172.18.X.Y
 * `host.py` — comportamento simples dos hosts
 * `gerador.py` — gera a topologia da rede (aleatória, linear ou anel)
 * `logs/` —guarda os logs gerados pelo router e pelo host
+* `instruções_execucao` — arquivo com instruções para executar o projeto
+* `list_ip_hosts` — lista contendo os endereços de ip dos hosts.
 * `README.md` — este arquivo
 
 ## 🔧 Manutenção e Escalabilidade
 
-* O projeto permite adicionar mais roteadores facilmente, alterando o `gerador.py`
+* O projeto permite adicionar mais roteadores facilmente, alterando o `gerador.py`. Veja o arquivo de instruções para mais informações.
 
 * Como executar o gerador:\\
     ```bash
@@ -135,6 +138,7 @@ ping 172.18.X.Y
         3 - Topologia anel (linha + conexão entre extremos)
 
     ```
+
 
   Os logs e tempos de convergência podem ser analisados via arquivos de log gerados pelos roteadores dentro da pasta de logs
 
