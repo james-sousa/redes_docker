@@ -1,0 +1,42 @@
+Construa e subir os containers: 
+    sudo docker-compose up --build
+
+Listar Containers Ativos:
+    sudo docker ps
+
+Comando para encerrar e limpar completamente o ambiente Docker:
+    sudo docker-compose down --volumes --remove-orphans
+
+Teste conectividade:
+    sudo docker exec -it redes_docker_host1a_1
+    ping 172.18.X.Y
+
+
+Opcional:
+ Se você deseja alterar as configurações da rede
+ gerando um novo compose use o gerador.py antes de 
+ construir o container para isso execute:
+        python3 gerador.py
+        Escolha a quantidade de roteadores
+        Escolha a forma de definir as vizinhanças:
+        1 - Gerar aleatoriamente (máx. 2 vizinhos)
+        2 - Topologia linear (em linha)
+        3 - Topologia anel (linha + conexão entre extremos)
+
+Depois é só construir e subir os conteiners normalmente.
+
+Observação:
+    Cuidado para não gerar erro de sobreposição de IP.
+    Se isso acontecer sugiro que modifique a base de ip dentro
+    do código do gerador.py bem no começo do código:
+        base_subnet = "172.18"
+        pode mudar para 172.19, 172.20, 172.21 e etc.
+    Ou você pode identificar qual rede local docker está causando
+    esse conflito e remove-la usando os seguintes comandos:
+        docker network ls - lista as redes exitentes
+        docker network rm nome da rede - remove uma rede especifica 
+        docker network prune - Se quiser fazer uma limpeza geral de redes não utilizadas
+
+
+
+

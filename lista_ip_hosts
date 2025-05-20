@@ -1,0 +1,21 @@
+Se as configurações do docker-compose forem mantidas como estão no arquivo altualmente essa é a lista com os endereços ips de cada host.
+Agora se as configurações forem alteradas atravês do gerador de compose o gerador.py essa lista não será útil. 
+
+
+host1a:172.18.1.10
+host1b:172.18.1.11
+host2a:172.18.2.10
+host2b:172.18.2.11
+host3a:172.18.3.10
+host3b:172.18.3.11
+host4a:172.18.4.10
+host4b:172.18.4.11
+host5a:172.18.5.10
+host5b:172.18.5.11
+host6a:172.18.6.10
+host6b:172.18.6.11
+host7a:172.18.7.10
+host7b:172.18.7.11
+host8a:172.18.8.10
+host8b:172.18.8.11
+
