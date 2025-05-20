@@ -109,7 +109,8 @@ sudo docker-compose down --volumes --remove-orphans
 sudo docker exec -it redes_docker_host1a_1
 ping 172.18.X.Y
 ```
-Veja o arquivo lista_ip_hosts - Ips dos hosts utilizados no projeto
+Veja o arquivo lista_ip_hosts - nele está localizado os IPs dos hosts utilizados no projeto.
+Veja também o arquivo instruções_execução - nele a instruções mais detalhadas para executar o projeto e evitar possiveis erros.
 
 ## Arquivos do Projeto
 
