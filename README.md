@@ -96,19 +96,21 @@ sudo docker-compose up --build
 ```bash
 sudo docker ps
 ```
-
-4. Comando para encerrar e limpar completamente o ambiente Docker:
-
-```bash
-sudo docker-compose down --volumes --remove-orphans
-```
-
-5. Teste conectividade:
+4. Teste conectividade:
 
 ```bash
 sudo docker exec -it redes_docker_host1a_1
 ping 172.18.X.Y
 ```
+
+5. Comando para encerrar e limpar completamente o ambiente Docker:
+
+```bash
+sudo docker-compose down --volumes --remove-orphans
+```
+
+
+
 Veja o arquivo lista_ip_hosts - nele está localizado os IPs dos hosts utilizados no projeto.
 Veja também o arquivo instruções_execução - nele a instruções mais detalhadas para executar o projeto e evitar possiveis erros.
 
@@ -124,7 +126,7 @@ Veja também o arquivo instruções_execução - nele a instruções mais detalh
 * `list_ip_hosts` — lista contendo os endereços de ip dos hosts.
 * `README.md` — este arquivo
 
-## 🔧 Manutenção e Escalabilidade
+## Manutenção e Escalabilidade
 
 * O projeto permite adicionar mais roteadores facilmente, alterando o `gerador.py`. Veja o arquivo de instruções para mais informações.
 
@@ -166,14 +168,14 @@ Gráficos de performance estão incluídos no relatório em PDF.
 
 ## Verificação de Conectividade
 
-Sim. Um host consegue realizar um `ping` qualquer outro host da rede, desde que as rotas tenham convergido corretamente após a troca de LSAs.
+Um host consegue realizar um `ping` em qualquer outro host da rede, desde que as rotas tenham convergido corretamente após a troca de LSAs.
 
 ## Autor
 
 Aluno: James de Sousa
 Curso de Sistemas de Informação - UFPI CSHNB
 
-## 🎥 Demonstração
+## Demonstração
 
 O vídeo com a demonstração do funcionamento está disponível em:
 [YouTube - Simulação Estado de Enlace](https://drive.google.com/file/d/1yOPZPLSVQRX8MtwzIXYFx-fzfJmY3Ohv/view)
