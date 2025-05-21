@@ -1,3 +1,8 @@
+Antes de subir o projeto:
+    Rode o script hosts_info.py para pegar os endereços IPs dos hosts
+    isso será essencial para realizar os testes de conectividade da rede.
+        execute python3 hosts_info.py
+
 Construa e subir os containers: 
     sudo docker-compose up --build
 
@@ -8,6 +13,7 @@ Comando para encerrar e limpar completamente o ambiente Docker:
     sudo docker-compose down --volumes --remove-orphans
 
 Teste conectividade:
+
     sudo docker exec -it redes_docker_host1a_1
     ping 172.18.X.Y
 
