@@ -84,7 +84,10 @@ Cada roteador:
 git clone https://github.com/james-sousa/redes_docker.git
 cd redes_docker
 ```
-
+2. execute o script hosts_info para pegar os endereços IPs dos hosts:
+    ```bash
+        python3 hosts_info.py
+    ```
 2. Construa os containers:
 
 ```bash
@@ -123,7 +126,7 @@ Veja também o arquivo instruções_execução - nele a instruções mais detalh
 * `gerador.py` — gera a topologia da rede (aleatória, linear ou anel)
 * `logs/` —guarda os logs gerados pelo router e pelo host
 * `instruções_execucao` — arquivo com instruções para executar o projeto
-* `list_ip_hosts` — lista contendo os endereços de ip dos hosts.
+* `hosts_info.py` — Gera uma lista contendo os endereços de ip dos hosts.
 * `README.md` — este arquivo
 
 ## Manutenção e Escalabilidade
