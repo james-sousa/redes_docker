@@ -19934,3 +19934,328 @@
 {"timestamp": "2025-05-19 11:23:07", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
 {"timestamp": "2025-05-19 11:23:07", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
 {"timestamp": "2025-05-19 11:23:07", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Iniciando roteador simplificado..."}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Vizinho router4 com IP 172.18.4.3 registrado"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Vizinho router6 com IP 172.18.6.3 registrado"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "router5 ouvindo em 172.18.5.3:5000"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "LSA recebido de router5 (seq 1)"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Propagando LSA de router5 para router6"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "LSA enviado para router4 (172.18.4.3)"}
+{"timestamp": "2025-05-21 23:52:42", "mensagem": "LSA enviado para router6 (172.18.6.3)"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "LSA recebido de router2 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Propagando LSA de router2 para router6"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "LSA recebido de router7 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Propagando LSA de router7 para router4"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Propagando LSA de router7 para router6"}
+{"timestamp": "2025-05-21 23:52:53", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:54", "mensagem": "LSA recebido de router3 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:54", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-21 23:52:54", "mensagem": "Propagando LSA de router3 para router6"}
+{"timestamp": "2025-05-21 23:52:54", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:56", "mensagem": "LSA recebido de router1 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:56", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-21 23:52:56", "mensagem": "Propagando LSA de router1 para router6"}
+{"timestamp": "2025-05-21 23:52:56", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA recebido de router6 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router6 para router4"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router6 para router6"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Erro ao processar LSA: 'router4'"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA recebido de router4 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router4 para router6"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Erro ao processar LSA: 'router8'"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA recebido de router8 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router8 para router4"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router8 para router6"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Tabela de rotas:\nrouter2 -> router4 (custo 3)\nrouter7 -> router6 (custo 2)\nrouter3 -> router4 (custo 2)\nrouter1 -> router4 (custo 4)\nrouter6 -> router6 (custo 1)\nrouter4 -> router4 (custo 1)\nrouter8 -> router6 (custo 3)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Tempo de Dijkstra: 0.000144s | Recalculo #1"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Tempo de converg\u00eancia: 0.011350s"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA enviado para router4 (172.18.4.3)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA enviado para router6 (172.18.6.3)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "LSA recebido de router5 (seq 2)"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Propagando LSA de router5 para router6"}
+{"timestamp": "2025-05-21 23:52:57", "mensagem": "Tempo de Dijkstra: 0.000055s | Recalculo #2"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Tempo de converg\u00eancia: 0.032742s"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:52:58", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "LSA recebido de router2 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Propagando LSA de router2 para router6"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Tempo de Dijkstra: 0.000055s | Recalculo #3"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Tempo de converg\u00eancia: 0.005058s"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "LSA recebido de router7 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Propagando LSA de router7 para router4"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Propagando LSA de router7 para router6"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Tempo de Dijkstra: 0.000052s | Recalculo #4"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Tempo de converg\u00eancia: 0.007255s"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:08", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "LSA recebido de router3 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Propagando LSA de router3 para router6"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Tempo de Dijkstra: 0.000053s | Recalculo #5"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Tempo de converg\u00eancia: 0.015763s"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:09", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "LSA recebido de router1 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Propagando LSA de router1 para router6"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Tempo de Dijkstra: 0.000052s | Recalculo #6"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Tempo de converg\u00eancia: 0.007485s"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:11", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "LSA recebido de router6 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router6 para router4"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router6 para router6"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de Dijkstra: 0.000136s | Recalculo #7"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de converg\u00eancia: 0.021878s"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "LSA recebido de router4 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router4 para router6"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de Dijkstra: 0.000067s | Recalculo #8"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de converg\u00eancia: 0.023898s"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "LSA recebido de router8 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router8 para router4"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Propagando LSA de router8 para router6"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de Dijkstra: 0.000056s | Recalculo #9"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Tempo de converg\u00eancia: 0.017749s"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "LSA enviado para router4 (172.18.4.3)"}
+{"timestamp": "2025-05-21 23:53:12", "mensagem": "LSA enviado para router6 (172.18.6.3)"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "LSA recebido de router5 (seq 3)"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Propagando LSA de router5 para router6"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Tempo de Dijkstra: 0.000062s | Recalculo #10"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Tempo de converg\u00eancia: 0.021236s"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:13", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "LSA recebido de router2 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Propagando LSA de router2 para router6"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Tempo de Dijkstra: 0.000056s | Recalculo #11"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Tempo de converg\u00eancia: 0.062249s"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "LSA recebido de router7 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Propagando LSA de router7 para router4"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Propagando LSA de router7 para router6"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Tempo de Dijkstra: 0.000058s | Recalculo #12"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Tempo de converg\u00eancia: 0.020226s"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:23", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "LSA recebido de router3 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Propagando LSA de router3 para router6"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Tempo de Dijkstra: 0.002545s | Recalculo #13"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Tempo de converg\u00eancia: 0.010232s"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:24", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "LSA recebido de router1 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Propagando LSA de router1 para router6"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Tempo de Dijkstra: 0.000051s | Recalculo #14"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Tempo de converg\u00eancia: 0.016000s"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:26", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA recebido de router6 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router6 para router4"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router6 para router6"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de Dijkstra: 0.000057s | Recalculo #15"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de converg\u00eancia: 0.034568s"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA recebido de router4 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router4 para router6"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de Dijkstra: 0.000066s | Recalculo #16"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de converg\u00eancia: 0.049901s"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA recebido de router8 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router8 para router4"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router8 para router6"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de Dijkstra: 0.000057s | Recalculo #17"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de converg\u00eancia: 0.014654s"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA enviado para router4 (172.18.4.3)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA enviado para router6 (172.18.6.3)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "LSA recebido de router5 (seq 4)"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Propagando LSA de router5 para router6"}
+{"timestamp": "2025-05-21 23:53:27", "mensagem": "Tempo de Dijkstra: 0.000060s | Recalculo #18"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Tempo de converg\u00eancia: 0.014615s"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Rota para 172.18.7.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.3 aplicada"}
+{"timestamp": "2025-05-21 23:53:28", "mensagem": "Rota para 172.18.8.0/24 via 172.18.6.3 aplicada"}
+{"timestamp": "2025-05-21 23:59:35", "mensagem": "Iniciando roteador simplificado..."}
+{"timestamp": "2025-05-21 23:59:35", "mensagem": "Vizinho router4 com IP 172.18.4.2 registrado"}
+{"timestamp": "2025-05-21 23:59:35", "mensagem": "router5 ouvindo em 172.18.5.2:5000"}
+{"timestamp": "2025-05-21 23:59:35", "mensagem": "LSA enviado para router4 (172.18.4.2)"}
+{"timestamp": "2025-05-21 23:59:36", "mensagem": "LSA recebido de router4 (seq 1)"}
+{"timestamp": "2025-05-21 23:59:36", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-21 23:59:36", "mensagem": "Tempo de Dijkstra: 0.000019s | Recalculo #1"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "LSA recebido de router3 (seq 2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Tempo de Dijkstra: 0.000029s | Recalculo #2"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "LSA enviado para router4 (172.18.4.2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "LSA recebido de router5 (seq 2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Erro ao processar LSA: 'router1'"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "LSA recebido de router2 (seq 2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Erro ao processar LSA: 'router1'"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "LSA recebido de router1 (seq 2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Tabela de rotas:\nrouter4 -> router4 (custo 1)\nrouter3 -> router4 (custo 2)\nrouter2 -> router4 (custo 3)\nrouter1 -> router4 (custo 2)"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Tempo de Dijkstra: 0.000229s | Recalculo #3"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Tempo de converg\u00eancia: 0.000694s"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-21 23:59:50", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "LSA recebido de router4 (seq 2)"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Tempo de Dijkstra: 0.000037s | Recalculo #4"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Tempo de converg\u00eancia: 0.000344s"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-21 23:59:51", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "LSA recebido de router3 (seq 3)"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de Dijkstra: 0.000040s | Recalculo #5"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de converg\u00eancia: 0.000633s"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "LSA enviado para router4 (172.18.4.2)"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "LSA recebido de router5 (seq 3)"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de Dijkstra: 0.000036s | Recalculo #6"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de converg\u00eancia: 0.000277s"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "LSA recebido de router2 (seq 3)"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de Dijkstra: 0.000041s | Recalculo #7"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de converg\u00eancia: 0.001227s"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "LSA recebido de router1 (seq 3)"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de Dijkstra: 0.000043s | Recalculo #8"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Tempo de converg\u00eancia: 0.001230s"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:05", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "LSA recebido de router4 (seq 3)"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Tempo de Dijkstra: 0.000036s | Recalculo #9"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Tempo de converg\u00eancia: 0.000336s"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:06", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "LSA recebido de router3 (seq 4)"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Propagando LSA de router3 para router4"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de Dijkstra: 0.000033s | Recalculo #10"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de converg\u00eancia: 0.000273s"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "LSA recebido de router5 (seq 4)"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Propagando LSA de router5 para router4"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de Dijkstra: 0.000039s | Recalculo #11"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de converg\u00eancia: 0.000349s"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "LSA enviado para router4 (172.18.4.2)"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "LSA recebido de router2 (seq 4)"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Propagando LSA de router2 para router4"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de Dijkstra: 0.000037s | Recalculo #12"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de converg\u00eancia: 0.000816s"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "LSA recebido de router1 (seq 4)"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Propagando LSA de router1 para router4"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de Dijkstra: 0.000036s | Recalculo #13"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Tempo de converg\u00eancia: 0.000292s"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:20", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "LSA recebido de router4 (seq 4)"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Propagando LSA de router4 para router4"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Tempo de Dijkstra: 0.000035s | Recalculo #14"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Tempo de converg\u00eancia: 0.000273s"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Rota para 172.18.3.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Rota para 172.18.2.0/24 via 172.18.4.2 aplicada"}
+{"timestamp": "2025-05-22 00:00:21", "mensagem": "Rota para 172.18.1.0/24 via 172.18.4.2 aplicada"}

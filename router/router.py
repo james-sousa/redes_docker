@@ -49,23 +49,10 @@ class Roteador:
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.socket.bind((self.ip, PORTA))
         registrar_log(f"{self.nome} ouvindo em {self.ip}:{PORTA}")
-
-        self.ativar_ip()
         
         threading.Thread(target=self.ouvir_mensagens, daemon=True).start()
         threading.Thread(target=self.enviar_periodicamente, daemon=True).start()
 
-    def ativar_ip(self):
-        try:
-            subprocess.run(["sysctl", "-w", "net.ipv4.ip_forward=1"], check=True)
-            registrar_log("Encaminhamento de IP ativado com sysctl")
-        except:
-            try:
-                with open("/proc/sys/net/ipv4/ip_forward", "w") as f:
-                    f.write("1")
-                registrar_log("Encaminhamento de IP ativado ")
-            except Exception as e:
-                registrar_log(f"Erro ao ativar IP: {e}")
 
     def criar_lsa(self):
         self.sequencia += 1

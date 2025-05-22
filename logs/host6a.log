@@ -67,3 +67,48 @@
 [2025-05-19 10:23:04] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2042ms
 [2025-05-19 10:23:04] [RTT] rtt min/avg/max/mdev = 0.153/0.192/0.223/0.029 ms
 [2025-05-19 10:23:04] Testes finalizados.
+[2025-05-21 23:52:55] Inicializando host...
+[2025-05-21 23:52:55] Definindo rota padrão via 172.18.6.3...
+[2025-05-21 23:52:55] Gateway configurado com sucesso.
+[2025-05-21 23:52:55] Iniciando testes de conectividade...
+[2025-05-21 23:52:55] Enviando pacotes ICMP para 172.18.6.3...
+[2025-05-21 23:52:57] Ping bem-sucedido.
+[2025-05-21 23:52:57] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2013ms
+[2025-05-21 23:52:57] [RTT] rtt min/avg/max/mdev = 0.170/0.184/0.197/0.011 ms
+[2025-05-21 23:52:57] Enviando pacotes ICMP para 172.18.6.11...
+[2025-05-21 23:52:59] Ping bem-sucedido.
+[2025-05-21 23:52:59] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2043ms
+[2025-05-21 23:52:59] [RTT] rtt min/avg/max/mdev = 0.110/0.143/0.184/0.030 ms
+[2025-05-21 23:52:59] Enviando pacotes ICMP para 172.18.7.10...
+[2025-05-21 23:53:02] Ping bem-sucedido.
+[2025-05-21 23:53:02] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2011ms
+[2025-05-21 23:53:02] [RTT] rtt min/avg/max/mdev = 0.145/0.180/0.238/0.040 ms
+[2025-05-21 23:53:02] Enviando pacotes ICMP para 172.18.7.11...
+[2025-05-21 23:53:04] Ping bem-sucedido.
+[2025-05-21 23:53:04] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2044ms
+[2025-05-21 23:53:04] [RTT] rtt min/avg/max/mdev = 0.165/0.216/0.279/0.047 ms
+[2025-05-21 23:53:04] Enviando pacotes ICMP para 172.18.8.10...
+[2025-05-21 23:53:06] Ping bem-sucedido.
+[2025-05-21 23:53:06] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2043ms
+[2025-05-21 23:53:06] [RTT] rtt min/avg/max/mdev = 0.108/0.187/0.234/0.056 ms
+[2025-05-21 23:53:06] Enviando pacotes ICMP para 172.18.8.11...
+[2025-05-21 23:53:08] Ping bem-sucedido.
+[2025-05-21 23:53:08] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2045ms
+[2025-05-21 23:53:08] [RTT] rtt min/avg/max/mdev = 0.146/0.178/0.206/0.024 ms
+[2025-05-21 23:53:08] Enviando pacotes ICMP para 172.18.5.10...
+[2025-05-21 23:53:10] Ping bem-sucedido.
+[2025-05-21 23:53:10] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2043ms
+[2025-05-21 23:53:10] [RTT] rtt min/avg/max/mdev = 0.225/0.236/0.253/0.012 ms
+[2025-05-21 23:53:10] Enviando pacotes ICMP para 172.18.1.10...
+[2025-05-21 23:53:12] Ping bem-sucedido.
+[2025-05-21 23:53:12] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2042ms
+[2025-05-21 23:53:12] [RTT] rtt min/avg/max/mdev = 0.265/0.290/0.327/0.026 ms
+[2025-05-21 23:53:12] Enviando pacotes ICMP para 172.18.1.11...
+[2025-05-21 23:53:14] Ping bem-sucedido.
+[2025-05-21 23:53:14] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2043ms
+[2025-05-21 23:53:14] [RTT] rtt min/avg/max/mdev = 0.217/0.261/0.320/0.043 ms
+[2025-05-21 23:53:14] Enviando pacotes ICMP para 172.18.2.10...
+[2025-05-21 23:53:16] Ping bem-sucedido.
+[2025-05-21 23:53:16] [Estatísticas de pacotes] 3 packets transmitted, 3 received, 0% packet loss, time 2040ms
+[2025-05-21 23:53:16] [RTT] rtt min/avg/max/mdev = 0.362/0.398/0.446/0.035 ms
+[2025-05-21 23:53:16] Enviando pacotes ICMP para 172.18.2.11...
