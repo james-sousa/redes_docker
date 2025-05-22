@@ -102,7 +102,7 @@ sudo docker ps
 4. Teste conectividade:
 
 ```bash
-sudo docker exec -it redes_docker_host1a_1
+sudo docker exec -it redes_docker_host1a_1 bash
 ping 172.18.X.Y
 ```
 
